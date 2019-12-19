@@ -1,0 +1,90 @@
+body{
+	background-color: #CFCCCC;
+}
+#box{
+	position: relative;
+	width: 600px;
+	height: 400px;
+	margin: 150px auto;
+	padding: 0px;
+	background-image: url(../images/book.png);
+	background-size: 100% 120%;
+}
+h2{ margin: 0px; }
+ul{ 
+	position: absolute;
+	margin: 0px;padding: 0px; 
+	top: -35px;
+}
+li{
+	height: 50px;
+	width: 300px;
+	float: left;
+	text-align: center;
+	font-size: 20px;
+	list-style: none;
+	line-height: 50px;
+	color: #FFFFFF;
+	background-size: 100% 100%;
+}
+li:nth-child(1){ background-image:url(../images/login.png); }
+li:nth-child(2){ background-image:url(../images/register.png); }
+li div{
+	position: absolute;
+	width:600px;
+	height: 400px;
+	background-image: url(../images/loginbg1.png);
+	background-size: 100% 100%;
+	display: none;
+	left: 0px;
+	top: 50px;
+}
+#register{background-image: url(../images/loginbg3.png);}
+/*li:hover div{ display: block; }*/
+/*############################################*/
+/*登录界面样式*/
+form{ text-align: left; margin: 50px auto; width: 420px; }
+input{
+	width: 400px;
+	height: 40px;
+	margin: 15px;
+	border: 0px;
+	font-size: 20px;
+	outline: none;
+	box-shadow: 2px 2px 2px #696767 inset;
+}
+.form2{ margin: 35px auto; }
+.code{ width: 250px; }
+#login #code-num{
+	position: absolute;
+	top: 194px;
+	left: 370px;
+	width: 120px; 
+	height: 42px;
+	float:right;
+	outline: none;
+	font-family: 华文行楷;
+	font-size: 30px;
+	color: #FFFFFF;
+	letter-spacing: 5px;
+	text-align: center;
+	text-shadow:10px 5px 5px #000;/*字体阴影*/
+	box-shadow: 0 0 0 #fff inset;
+	moz-user-select: -moz-none; /*一大串不知道哪个，字体不能被鼠标选中*/
+	-moz-user-select: none; 
+	-o-user-select:none; 
+	-khtml-user-select:none; 
+	-webkit-user-select:none; 
+	-ms-user-select:none; 
+	user-select:none;
+}
+input:nth-child(8),input:nth-child(9){ 
+	background-color: #3D3C3C; 
+	box-shadow:0px 0px 0px; 
+	color: #FFF;
+}
+input:nth-child(8):hover,input:nth-child(9):hover{
+	background-color: #212020;
+	box-shadow: 5px 5px 5px #000000;
+}
+#register input{ margin-top: 10px; margin-left: 15px; }
